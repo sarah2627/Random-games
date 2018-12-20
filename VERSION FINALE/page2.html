@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <title>Random games</title>
+	    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel='stylesheet' type='text/css' href='styles/page2.css'/>
+	</head>
+	<body>
+		<div class="div_conteneur_parent">
+			<div class="div_conteneur_page">	
+				<div class="titre_page">
+					<h1>Random games</h1>
+				</div>
+				<div class="div_int_page">
+					<div class="titre_general"> 
+						<div class="contenu_titre_general">
+							<h1>Génération aléatoire de jeux </h1>
+						</div>
+					</div>	
+					<div class="deuxieme_partie">
+						<div id="conteneur">
+							<div class="centre">
+								<div class="titre_centre" id="titre">
+									Ce site a pour but de créer des jeux aléatoirement : jeu d'action, de vérité, jeu de la patate chaude, etc alors clique sur le bouton pour générer un nouveau jeu	!		
+								</div>	
+							</div>
+							<div id="deux_colonnes">		
+								<div class="colonne" id="colonne_gauche">
+									<img src="images/dé.gif" alt="" align="absmiddle"/>
+ 									<!-- Div pour afficher les jeux aléatoirement -->
+									<div id="calque_jeu">
+									    <div class="astuce" id="calque_astuce" ></div>
+									</div>
+									<!-- Div pour le "jeu d'action" -->
+									<div id="jeuaction" onclick="document.querySelector('#jeuaction').style.display='none'; ">
+										<div id="calque_action"></div>
+									</div>
+									<!-- Div pour le "jeu de la vérité" -->
+									<div id="jeuverite" onclick="document.querySelector('#jeuverite').style.display='none'; ">
+										<div id="calque_verite"></div>
+									</div>
+									<!-- Div pour le jeu "tu préfères" -->
+									<div id="jeutupreferes" onclick="document.querySelector('#jeutupreferes').style.display='none';">
+										 <div id="calque_tupreferes"></div>
+									</div>
+									<!-- Div pour le jeu "je n'ai jamais" -->
+									<div id="jeujenaijamais" onclick="document.querySelector('#jeujenaijamais').style.display='none'; ">
+										<div id="calque_jenaijamais"></div>
+									</div>
+									<!-- Div pour le jeu "qui de vous deux" -->
+									<div id="jeuquidevousdeux" onclick="document.querySelector('#jeuquidevousdeux').style.display='none';">
+										<div id="calque_quidevousdeux"></div>
+									</div>
+									<!-- Div pour le jeu de "la patate chaude" -->
+									<div id="jeupatatechaude" onclick="document.querySelector('#jeupatatechaude').style.display='none';">
+										<!-- API YOUTUBE -->
+										<div id="player"></div>
+										<br/><br/><br/> Instruction : c'est le maître du jeu (celui qui lit les questions) qui a le pouvoir d'arrêter la musique !
+									</div>
+								</div>
+								<div class="colonne" id="colonne_droite">
+									<div class="astuce" id="calque_astuce">
+										<input id="boutton_generer" class="hover" type="button" value="Générer un nouveau jeu" onclick="genere_astuces()"/>
+									</div>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PLAYLIST YOUTUBE API -->
+		<div class="container">
+            <div class="display hidden">
+                <div id="video"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <img class="thumb" src="images/angele.jpg"/>
+            <div class="controls">
+                <button id="previous"> <img src="images/flechegauche.png"></button>
+                <button id="play"> <img src="images/play.png"> </button>
+                <button id="pause"> <img src="images/pause.png"> </button>
+                <button id="next"> <img src="images/flechedroite.png"> </button>
+            </div>
+        </footer>
+	<script language='javascript' src='js/astuces.js'></script>
+	<script language='javascript' src="js/api.js"></script>
+	<script language='javascript' src="https://code.jquery.com/jquery.min.js"></script>
+	</body>
+</html>
+	
